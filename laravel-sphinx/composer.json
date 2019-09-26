@@ -1,0 +1,33 @@
+{
+    "name": "fobia/laravel-sphinx",
+    "description": "A Laravel query builder for SphinxQL",
+    "keywords": ["laravel", "database", "sphinxql", "sphinx", "SQL", "query builder", "sphinx eloquent"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.9",
+        "foolz/sphinxql-query-builder": "^1.0"
+    },
+    "require-dev": {
+        "illuminate/bus": "~5.2.0|~5.3.0|~5.4.0",
+        "illuminate/database": "~5.2.0|~5.3.0|~5.4.0",
+        "illuminate/support": "~5.2.0|~5.3.0|~5.4.0",
+        "symfony/filesystem": "^3.0",
+        "orchestra/testbench": "~3.1",
+        "phpunit/phpunit": "~5.5"
+    },
+    "suggest": {
+        "laravel/framework": "The Laravel Framework",
+        "prettus/l5-repository": "Repositories to  the database layer"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fobia\\Database\\SphinxConnection\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fobia\\Database\\SphinxConnection\\Test\\": "tests/"
+        }
+    }
+}
