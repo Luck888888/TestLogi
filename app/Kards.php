@@ -15,8 +15,6 @@ class Kards extends Model
     {
         return $this->hasMany('App\project', 'kard_id');
     }
-
-
 }
 
 
